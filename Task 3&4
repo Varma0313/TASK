@@ -9,14 +9,6 @@
 <body>
     <script>
     
-                                       // Task range into random
-
-            function range(num1, num2){
-                return math.round(math.random(num1,num2)-4)
-            }
-                console.log(range(0, 56)); 
-
-
 
 
                                          // indexof & lastindexof
