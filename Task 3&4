@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number & Math</title>
+</head>
+<body>
+    <script>
+    
+                                       // Task range into random
+
+            function range(num1, num2){
+                return math.round(math.random(num1,num2)-4)
+            }
+                console.log(range(0, 56)); 
+
+
+
+
+                                         // indexof & lastindexof
+        
+            let text = 'Hello World'
+            let substr = 'o'
+            let indexof = text.indexOf(substr);
+            let indexofWithPos = text.indexOf(substr, 2);
+            console.log(indexof, indexofWithPos);                        //Indexof
+
+            let lastIndexof = text.lastIndexOf(substr);
+            let lastIndexofWithPos = text.lastIndexOf(substr, 2);
+            console.log(lastIndexof, lastIndexofWithPos)                  //last indexof
+
+
+
+
+                                         //gmail with @ includes
+
+            let email = 'ravivarma@gmail.com'
+            let emailid = 'ravivarma123gmail.com'
+            console.log('valid email id :', email.includes('@'));
+            console.log('valid email id :', emailid.includes('@'));
+
+
+                                        //jack and jill with upper and lower case
+
+            let char = "jack and jill went up the hill"; 
+            char = char.toLowerCase();
+            let data = '';
+            for(let i = 0; i < char.length; i++){ 
+             data += char.charAt(i);
+                if(i==0 || i==5 || i==9 || i==14 || i==19 || i==22 || i==26 ){
+                    data += char.charAt(i).toUpperCase();
+                }
+                
+                //  console.log(data);
+            }
+
+
+
+                                        // Task range into random
+
+            // function range(num1, num2) {
+            //     return Math.round(Math.random() * (num2 - num1));
+            // }
+            //     console.log(range(0, 75));
+
+
+
+    </script>
+</body>
+</html>
