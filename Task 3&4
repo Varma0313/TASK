@@ -55,16 +55,15 @@
                 
                 //  console.log(data);
             }
+            
+            
+                                        // TASK 4 
+                                        // Rnage and Random
 
-
-
-                                        // Task range into random
-
-            // function range(num1, num2) {
-            //     return Math.round(Math.random() * (num2 - num1));
-            // }
-            //     console.log(range(0, 75));
-
+            function range(num1, num2) {
+                return Math.round(Math.random() * (num2 - num1));
+            }
+                console.log(range(0, 75));
 
 
     </script>
