@@ -1,0 +1,30 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number & Math</title>
+    </head>
+    <body>
+        <script>
+        
+                         //Task Hello World sort
+
+
+        let arr = ['H','e','l','l','o', 'W','o','r','l','d'];               //array with index
+        console.log(arr.sort());
+        console.log(arr.reverse());
+
+        let arr1 = 'Hello World'.split('');                                 //string
+        console.log(arr1.sort());
+        console.log(arr1.reverse());
+
+        let arr2 = ['helloworld'];                                           //array-->string
+        console.log(arr2[0].split('').sort());
+        console.log(arr2[0].split('').sort().join());
+
+
+    </script>
+    </body>
+</html>
