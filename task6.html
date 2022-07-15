@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>object</title>
+    </head>
+    <body>
+        <script>
+
+
+                                        //Task calculator
+          
+
+            function calc(value1, value2){
+                this.value1 = value1;
+                this.value2 = value2;
+
+            }
+            let obj1 = new calc(90, 3);
+            console.log('add :', obj1.value1 + obj1.value2);          //add : 93
+
+            let obj2 = new calc(66, 87);
+            console.log('sub :', obj2.value2 - obj2.value1);          //sub : 21
+
+            let obj3 = new calc(23, 2);
+            console.log('multiply :', obj3.value1 * obj3.value2);     //multiply : 46
+
+            let obj4 = new calc (50, 2);
+            console.log('div :', obj4.value1 / obj4.value2);          //div : 25
+
+                                //<----->\\
+            
+            calc1 = {
+                value1 : 13,
+                value2 : 02,
+            };
+            console.log(calc1.value1 + calc1.value2);
+            console.log(calc1['value1'] - calc1['value2']);
+            console.log(calc1.value1 * calc1.value2);
+            console.log(calc1['value1'] / calc1['value2']);
+
+
+        </script>
+    </body>
+</html>
