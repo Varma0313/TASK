@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XML HTTP REQUEST</title>
+  </head>
+
+  <body>
+
+    <button onclick="Register()">Login</button>
+    <!-- <button onclick="clearUserData()">clear</button> -->
+    <pre id="response"></pre>
+
+  </body>
+
+  </html> 
+
+    <script>
+      let url = 'https://reqres.in/api/register';
+      let method = 'POST';
+      let async = true;
+
+      // function clearUserData(){
+      //   document.querySelector('#response').innerHTML = "";}
+
+      function Register(){
+        
+        const httpclient = new XMLHttpRequest();
+        httpclient.open(method, url, async);
+              //   httpclient.onreadystatechange = function(){  
+              //     if(this.readyState === 4 && this.status === 200){
+              //       document.querySelector('#response').innerHTML = this.responseText;
+              //   }
+              // }
+        httpclient.setRequestHeader("Content-type", "application/json");
+        httpclient.send(JSON.stringify({
+          email: "eve.holt@reqres.in",
+          password: "HelloWorld",
+        }));
+
+        // httpclient.send();
+    }
+
+
+
+
+    </script>
+
+
