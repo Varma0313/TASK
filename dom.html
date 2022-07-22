@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <div id="profile"></div>
+  </body>
+
+  <script>
+    let url =
+      'https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=75&amp;w=75';
+    let img = document.createElement('img');
+    img.classList.add('card-img-top');
+    img.setAttribute('src', url);
+    img.setAttribute('height', 175);
+    img.setAttribute('width', 125);
+
+    let name = `<h3>
+      <span class="headerStyle">Name :</span>
+      <span id="name">Ravivarma</span> 
+    </h3> `;
+
+    let gender = `<div>
+      <span class="headerStyle">Gender :</span> 
+      <span id="gender">Male</span>
+    </div> `;
+
+    let age = `<div> 
+      <span class="headerStyle">Age :</span> 
+      <span id="age">18</span> 
+    </div> `;
+
+    let Dateofbirth = `<div> 
+      <span class="headerStyle">DOB :</span> 
+      <span id="Dateofbirth">13/05/1998</span> 
+    </div> `;
+
+    let contact = ` <div> 
+      <span class="headerStyle">Contact Info :</span> 
+      <span id="contact">90033**338</span> 
+    </div> `;
+
+    let card = document.createElement('div');
+    card.classList.add('card');
+    let cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+    cardBody.innerHTML = name + gender + age + Dateofbirth + contact;
+
+    card.appendChild(img);
+    card.appendChild(cardBody);
+
+    document.querySelector('#profile').appendChild(card);
+  </script>
+</html>
